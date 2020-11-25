@@ -27,24 +27,37 @@ public class test01 {
 	 
 	 //0~9까지
 	 
-	 System.out.print("요소 수: "+"\n");
+	 System.out.print("요소 수: ");
 	 int b = sc.nextInt();
 	 int[] arr = new int[b]; //배열의 크기를 입력한 요소 수 만큼 할당한다.
 	 
 	 for(int i=0;i<arr.length;i++) {
 		 arr[i] = 1+ rd.nextInt(10);; //랜덤값1~10을 각 요소에 대입
 	 }
-	 for(int z : arr) {
-		 System.out.print(z+",");
-		 
-		 
-	 }System.out.println();
-		/*
-		 * for(int j=10;j>=0;j--) { for(int k=0;k<arr.length;k++) { if(arr[k]>=j) {
-		 * System.out.print("*\t"); } } System.out.println();
-		 * 
-		 * }
-		 */
+	for(int i=0;i<arr.length;i++) {
+		System.out.print(arr[i]);
+		if(i==arr.length-1)break;
+		System.out.print(",");
+	} //배열요소값 확인해보기 + 마지막은 ,없이 출력 foreach로는 할 수 없나!?
+	System.out.println();	
+	
+	
+	
+	  for(int j=10;j>=1;j--) { 
+		  for(int k=0;k<arr.length;k++) { 
+			  if(arr[k]>=j) {System.out.print("* ");} else {
+			  System.out.print("  ");}
+			  } 
+		  System.out.println();
+	  
+	  }
+	  for(int i=0;i<arr.length;i++) {
+		  System.out.print("--");
+		 }System.out.println();
+	  for(int i=0;i<arr.length;i++) {
+		  System.out.print(i%10+" ");
+	  }
+	 
 	 
 	 
 	 

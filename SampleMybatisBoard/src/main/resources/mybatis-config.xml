@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ <typeAliases>
+ <!-- sqlSessionFactory빈이 사용할 vo객체를 지정한다. -->
+   <typeAlias alias="BoardVO" type="com.SampleMybatisWeb.vo.MybatisBoard"/>
+ </typeAliases>
+ 
+ <mappers>
+		<mapper resource="mapper/boardmapper.xml" />
+	</mappers>
+ 
+ 
+</configuration>
